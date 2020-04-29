@@ -1,4 +1,4 @@
-# RecSys Challenge 2019
+# RecSys Challenge 2019 - benchmark models
 
 This repository contains code to reproduce the benchmarks calculated for the data from the [ACM RecSys Challenge 2019](http://www.recsyschallenge.com/2019/) organized by trivago, TU Wien, Politecnico di Milano, and Karlsruhe Institute of Technology.
 
@@ -16,6 +16,11 @@ This will create a folder in the current directory which will contain the Python
 To install the package and its dependencies use:
 
     pip install git+https://github.com/trivago/recsys-challenge-2019-benchmarks.git#egg=trvrecsys2019benchmarks
+
+This will install all Python packages that are needed. Note that in order to run the code on a Mac, the used version of the lightgbm library requires the installation of the OpenMP library, which is required for running LightGBM on the system with the Apple Clang compiler. This can be installed via:
+
+    brew install libomp
+
 
 ### Producing example data
 Before running any models you can create a small example data set to test the execution of the models before running them with the bigger RecSysChallenge data sets.
